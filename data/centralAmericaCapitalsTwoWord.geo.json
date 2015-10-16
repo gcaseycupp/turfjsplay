@@ -1,0 +1,60 @@
+var capitalCitiesTwo ={
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {"name":"Guat"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -90.50537109375,
+          14.668625907385902
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Panama"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -89.219970703125,
+          13.694024844701644
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"San Jose"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -84.144287109375,
+          10.033766870069249
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Panama"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -79.56298828125,
+          9.047852691011155
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Belize"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -88.30810546875,
+          17.497389400663835
+        ]
+      }
+    }
+  ]
+}

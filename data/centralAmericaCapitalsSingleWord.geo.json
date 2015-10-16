@@ -1,0 +1,28 @@
+var capitalCitiesOne ={
+  "type": "FeatureCollection",
+  "features": [
+   
+    {
+      "type": "Feature",
+      "properties": {"name":"Tegugicalpa"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -87.2314453125,
+          14.072644954380328
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {"name":"Managua"},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -86.28936767578125,
+          12.122578897072293
+        ]
+      }
+    }
+  ]
+}
