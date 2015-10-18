@@ -30,14 +30,30 @@ var caCapitalLayerTwo = L.mapbox.featureLayer(capitalCitiesTwo)
 
      caCapitalLayerTwo.setStyle({color: 'red'});
 
-    var caCapitalLayerOne = L.mapbox.featureLayer(capitalCitiesOne)
-    .addTo(map);
+
+ var caCapitalLayerOne = L.mapbox.featureLayer(capitalCitiesOne, {                          
+                 pointToLayer: function(feature, latlng) {
+                     return L.circleMarker(latlng, {
+                        radius: 8,
+                        fillColor: '#458B00',
+                        color: '#000',
+                        weight: 1,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    });
+                 }
+             });
+
+caCapitalLayerOne.addTo(map);
+
+
 
 
     map.fitBounds(caCapitalLayerTwo.getBounds());
 
      caCapitalLayerTwo.eachLayer(function (layer) {
-    layer.bindPopup(layer.feature.properties.name, { closeButton: false });
+    layer.bindPopup(layer.feature.properties.name, { 
+      closeButton: false });
   }).addTo(map);
 
          caCapitalLayerOne.eachLayer(function (layer) {
@@ -65,7 +81,13 @@ var caCapitalLayerTwo = L.mapbox.featureLayer(capitalCitiesTwo)
   // Change the nearest hospital to a large marker
   nearestHospital.properties['marker-size'] = 'large';
 
+var myLatLng = [nearestHospital.geometry.coordinates[1],nearestHospital.geometry.coordinates[0]];
+  var popup = L.popup()
+    .setLatLng(myLatLng)
+    .setContent('<p>Hello<br />This is the Closest Two Word Capital to' +  e.layer.feature.properties.name + ' </p>')
+    .openOn(map);
+
 
   // Add the new GeoJSON to hospitalLayer
-  caCapitalLayerTwo.setGeoJSON(hospitalFeatures);
+ // caCapitalLayerTwo.setGeoJSON(hospitalFeatures);
 });
