@@ -3,7 +3,7 @@ var capitalCitiesTwo ={
   "features": [
     {
       "type": "Feature",
-      "properties": {"name":"Guat"},
+      "properties": {"name":"Guatemala City"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -14,7 +14,7 @@ var capitalCitiesTwo ={
     },
     {
       "type": "Feature",
-      "properties": {"name":"Panama"},
+      "properties": {"name":"San Salvador"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -36,7 +36,7 @@ var capitalCitiesTwo ={
     },
     {
       "type": "Feature",
-      "properties": {"name":"Panama"},
+      "properties": {"name":"Panama City"},
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -47,7 +47,7 @@ var capitalCitiesTwo ={
     },
     {
       "type": "Feature",
-      "properties": {"name":"Belize"},
+      "properties": {"name":"Belize City"},
       "geometry": {
         "type": "Point",
         "coordinates": [
